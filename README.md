@@ -8,7 +8,7 @@ This project demonstrates the implementation and benchmarking of a simple spin l
 
 The `SpinLock` implemented here is a basic spin lock using atomic operations. It spins (busy-waits) until the lock becomes available, making it suitable for scenarios where the critical section is expected to be held for a short duration.
 
-### Implementation Details
+## Implementation Details
 
 - **Locking**: Uses `atomic.CompareAndSwapInt32` to attempt to acquire the lock.
 - **Unlocking**: Uses `atomic.StoreInt32` to release the lock.
